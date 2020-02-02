@@ -19,7 +19,7 @@
 }
 
 .footer a{
-  font-family: 'Open Sans', sans-serif important;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 body {
@@ -34,6 +34,10 @@ h1{
 
 h1, h2 {
   font-family: 'Antiqua', cursive;
+}
+
+.categories li {
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .character_box{
@@ -195,20 +199,22 @@ h1, h2 {
   margin-top: 15px;
 }
 
+.rank_item_ranking_container p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
 .rank_item_ranking_description{
-  width: 50%;
+  width: 90%;
 }
 
 .rank_item_ranking_number{
-  width: 50%;
+  width: 10%;
 }
 .rank_item_ranking_description p{
-  font-size: 10px;
   text-align: left;
 }
 
 .rank_item_ranking_number p{
-  font-size: 10px;
   text-align: right;
 }
 
