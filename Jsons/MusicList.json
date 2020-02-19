@@ -1,0 +1,71 @@
+musicNodes: [{
+  "title": "Inception",
+  "imagePath": "images/Inception.jpg",
+  "theme": 8,
+  "tone": 8,
+  "recognizability": 6,
+  "populatiry": 6
+}, {
+  "title": "Shrek",
+  "imagePath": "images/Shrek.jpg",
+  "theme": 7,
+  "tone": 7,
+  "recognizability": 8,
+  "populatiry": 8
+}, {
+  "title": "Tarzan",
+  "imagePath": "images/Tarzan.jpg",
+  "theme": 2,
+  "tone": 3,
+  "recognizability": 8,
+  "populatiry": 6
+}, {
+  "title": "Black Panther",
+  "imagePath": "images/Black_Panther.jpg",
+  "theme": 7,
+  "tone": 8,
+  "recognizability": 9,
+  "populatiry": 9
+}, {
+  "title": "Lord of The Rings(Trilogy)",
+  "imagePath": "images/Fellowship.jpg",
+  "theme": 8,
+  "tone": 9,
+  "recognizability": 9,
+  "populatiry": 9
+}, {
+  "title": "Guardians of the Galaxy",
+  "imagePath": "images/Guardians.jpg",
+  "theme": 6,
+  "tone": 7,
+  "recognizability": 7,
+  "populatiry": 9
+}, {
+  "title": "The Holiday",
+  "imagePath": "images/The_Holiday.jpg",
+  "theme": 9,
+  "tone": 9,
+  "recognizability": 4,
+  "populatiry": 4
+}, {
+  "title": "Frozen",
+  "imagePath": "images/Frozen.jpg",
+  "theme": 4,
+  "tone": 8,
+  "recognizability": 10,
+  "populatiry": 10
+}, {
+  "title": "Pirates of the Carribean(Trilogy)",
+  "imagePath": "images/Curse_of_the_Black_Pearl.png",
+  "theme": 9,
+  "tone": 9,
+  "recognizability": 10,
+  "populatiry": 9
+}, {
+  "title": "Brother Bear",
+  "imagePath": "images/Brother_Bear.png ",
+  "theme": 8,
+  "tone": 6,
+  "recognizability": 4,
+  "populatiry": 2
+}]

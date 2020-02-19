@@ -26,7 +26,7 @@ body {
   background-color: #FFFAE1;
 }
 
-h1{
+h1, #desciption {
   text-align: center;
   font-size: 65px;
   margin-bottom: 15px;
@@ -216,10 +216,4 @@ h1, h2 {
 
 .rank_item_ranking_number p{
   text-align: right;
-}
-
-
-/* Mobile Styles */
-@media only screen and (max-width: 700px) {
-
 }
