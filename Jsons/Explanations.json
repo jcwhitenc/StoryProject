@@ -1,0 +1,30 @@
+"explanations" {
+  "music": {
+    "description": "Music in Movies",
+    "categories": [
+      "Use of Themes: There are no themes used in the film - The themes are distinct but blend together in a complex harmony throughout the film.",
+      "Tone: The music is boring and doesn’t add much to the scene, maybe even distracts from it - The music sets the tone of the scene and helps convey the emotion of what’s happening on screen.",
+      "Recognizability: Most people feel like they’ve never heard the music before - Most people know exactly what movie the music is from, maybe even which scene.",
+      "Popularity: Nobody listens to the music or cares about it - Most people can hum a few bars from the music if you ask them about the movie."
+    ]
+  },
+  "movies": {
+    "description": "Mainstream Movies",
+    "categories": [
+      "Characters: Most of the characters are easily forgotten, don’t add anything to the story, and are one-note - The characters are relatable and complex and add to the plot.",
+      "Dialogue: The dialogue is boring, often explaining what is going on, or meaningless - The dialogue is full of subtext and has multiple purposes. ",
+      "Imagery: The shots from the movie seem awkward, unnatural, devoid of meaning, and not thought out - The are multiple examples where the images from the movie have deep meaning or symbolism and stay with the audience.",
+      "Plot/Plots: The plot has been done countless times in a similar way and is boring - The plots are realistic, compelling, and seem fresh."
+      "Popularity: No one has heard of this movie - Nearly everyone has an opinion about this movie."
+    ]
+  },
+  "books": {
+    "description": "Books",
+    "categories": [
+      "Characters: The characters are one-note and create no response from the reader - The reader has a deep connection with the main characters and the side characters have distinct purposes.",
+      "Dialogue: The Dialogue is boring and reveals little about the character and the plot - The Dialogue stretches the reader’s perspective and is deep.",
+      "Plot Devices: There is little use of plot devices and they don’t help move the plot that well - The plot devices are used purposefully but are also used in natural ways.",
+      "Popularity: No one has heard about this book - Most people have at least opened the book if not finished it or listened to the Audio Book."
+    ]
+  }
+}
