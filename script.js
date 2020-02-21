@@ -41,6 +41,7 @@ function generateFooter() {
 
 function generateCells(type) {
   var gridHTML = "";
+
   //this is the list of categories
   var header = rankCells[type][0];
   //for each item in the list
@@ -53,7 +54,7 @@ function generateCells(type) {
     //title
     cellHTML += "<h1>" + cell['title'] + "</h1>";
     //image
-    cellHTML += "<a><img src='" + cell['imagePath'] + "'/></a>";
+    cellHTML += "<a class='imageWrapper'><img src='" + cell['imagePath'] + "' name = '" + cell['title'] + "'/></a>";
     //container
     cellHTML += "<div class='rank_item_ranking_container'>";
     //description
@@ -69,11 +70,29 @@ function generateCells(type) {
     });
     cellHTML += "</p></div>"; //rank_item_ranking_number
     cellHTML += "</div>"; //rank_item_ranking_container
-    cellHTML += "</div>";//rank_item
+    cellHTML += "</div>"; //rank_item
     gridHTML += cellHTML;
   });
   gridHTML += "</div>"; //rank_grid
   document.getElementById('rank_grid').innerHTML = gridHTML;
 
   //add the onClickListener to the images
+  if (type != 'music') {
+    var images = document.getElementsByClassName('imageWrapper');
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener('click', m => {
+        //fetch the info from tastedrive
+        //https://tastedive.com/api/similar?info=1&q=Thor: Ragnarok&k=YOUR API-KEY
+        //Access Key 356126-StoriesS-7W8ACTUO
+        var url = 'https://tastedive.com/api/similar?q=' + m.srcElement.name + '&k=356126-StoriesS-7W8ACTUO&limit=5';
+        fetch(url)
+          .then(function(response) {
+            console.log(response);
+            return response.json();
+          }).then(function(json) {
+            console.log(json);
+          });
+      });
+    }
+  }
 }

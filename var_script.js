@@ -271,5 +271,5 @@ let bookCells = [
 let rankCells = {
   "music": musicCells,
   "movies": movieCells,
-  "books": bookCells
+  "book": bookCells
 }
