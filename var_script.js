@@ -19,7 +19,7 @@ let explanations = {
       "Popularity: No one has heard of this movie - Nearly everyone has an opinion about this movie."
     ]
   },
-  "book": {
+  "books": {
     "description": "Books",
     "categories": [
       "Characters: The characters are one-note and create no response from the reader - The reader has a deep connection with the main characters and the side characters have distinct purposes.",
@@ -203,7 +203,7 @@ let bookCells = [
     "Plot Devices": 8,
     "Popularity": 7,
   }, {
-    "title": "Harry Potter and the Half Blood Prince",
+    "title": "Harry Potter and the Half-Blood Prince",
     "imagePath": "images/Half_Blood.png",
     "Characters": 8,
     "Dialogue": 7,
@@ -271,5 +271,5 @@ let bookCells = [
 let rankCells = {
   "music": musicCells,
   "movies": movieCells,
-  "book": bookCells
+  "books": bookCells
 }

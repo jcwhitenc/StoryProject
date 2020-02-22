@@ -84,7 +84,7 @@ function generateCells(type) {
         //fetch the info from tastedrive
         //https://tastedive.com/api/similar?info=1&q=Thor: Ragnarok&k=YOUR API-KEY
         //Access Key 356126-StoriesS-7W8ACTUO
-        var url = 'https://cors-anywhere.herokuapp.com/' + 'https://tastedive.com/api/similar?info=1&q=' + m.srcElement.name + '&k=356126-StoriesS-7W8ACTUO&limit=5';
+        var url = 'https://cors-anywhere.herokuapp.com/' + 'https://tastedive.com/api/similar?info=1&q=' + m.srcElement.name + '&k=356126-StoriesS-7W8ACTUO&limit=5' + "&type=" + type;
         fetch(url)
           .then(function(response) {
             // console.log(response);
@@ -133,7 +133,7 @@ function generateCells(type) {
 
             var elmnt = document.getElementById("similar_list");
             elmnt.scrollIntoView();
-            window.scrollBy(0,-50);  
+            window.scrollBy(0,-50);
           });
       });
     }
