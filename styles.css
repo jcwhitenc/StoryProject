@@ -260,6 +260,7 @@ h1, h2 {
   font-family: 'Antiqua', cursive;
   font-size: 40px;
   align-self: center;
+  margin: 20px;
 }
 
 .similar_list_item p {

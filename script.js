@@ -107,14 +107,14 @@ function generateCells(type) {
             listHTML += "</div>"; //similar_header_box
             var results = json.Similar.Results;
             //create the 5 items in the similiar list
-            if(results == null){
+            if (results == null) {
               document.getElementById("similar_list").innerHTML = listHTML;
               return;
             }
             listHTML += "<h2> Similar Titles </h2>";
             results.forEach((result, i) => {
               //check for results
-              if(result == null){
+              if (result == null) {
                 return;
               }
               listHTML += "<div class='similar_list_item'>";
@@ -130,6 +130,10 @@ function generateCells(type) {
 
 
             document.getElementById("similar_list").innerHTML = listHTML;
+
+            var elmnt = document.getElementById("similar_list");
+            elmnt.scrollIntoView();
+            window.scrollBy(0,-50);  
           });
       });
     }
