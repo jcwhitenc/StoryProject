@@ -54,7 +54,7 @@ function generateCells(type) {
     //title
     cellHTML += "<h1>" + cell['title'] + "</h1>";
     //image
-    cellHTML += "<a class='imageWrapper'><img src='" + cell['imagePath'] + "' name = '" + cell['title'] + "'/></a>";
+    cellHTML += "<a class='imageWrapper'><img src='" + cell['imagePath'] + "' name = \"" + cell['title'] + "\"/></a>";
     //container
     cellHTML += "<div class='rank_item_ranking_container'>";
     //description
@@ -84,13 +84,52 @@ function generateCells(type) {
         //fetch the info from tastedrive
         //https://tastedive.com/api/similar?info=1&q=Thor: Ragnarok&k=YOUR API-KEY
         //Access Key 356126-StoriesS-7W8ACTUO
-        var url = 'https://tastedive.com/api/similar?q=' + m.srcElement.name + '&k=356126-StoriesS-7W8ACTUO&limit=5';
+        var url = 'https://cors-anywhere.herokuapp.com/' + 'https://tastedive.com/api/similar?info=1&q=' + m.srcElement.name + '&k=356126-StoriesS-7W8ACTUO&limit=5';
         fetch(url)
           .then(function(response) {
-            console.log(response);
+            // console.log(response);
             return response.json();
           }).then(function(json) {
             console.log(json);
+            document.getElementById("similar_list").innerHTML = "";
+
+            //create the similiar_list
+            var listHTML = "";
+            var clickedItem = json.Similar.Info[0];
+            listHTML += "<h1>" + m.srcElement.name + "</h1>";
+            listHTML += "<div class='similar_header_box'>";
+            //create the image to display.
+            listHTML += m.target.outerHTML;
+            //if there is no info, don't put it
+            if (clickedItem.wTeaser != null) {
+              listHTML += "<p>" + clickedItem.wTeaser + "</p>";
+            }
+            listHTML += "</div>"; //similar_header_box
+            var results = json.Similar.Results;
+            //create the 5 items in the similiar list
+            if(results == null){
+              document.getElementById("similar_list").innerHTML = listHTML;
+              return;
+            }
+            listHTML += "<h2> Similar Titles </h2>";
+            results.forEach((result, i) => {
+              //check for results
+              if(result == null){
+                return;
+              }
+              listHTML += "<div class='similar_list_item'>";
+              //for each item create the title
+              listHTML += "<h3>" + result.Name + "</h3>";
+              //create the paragraph
+              listHTML += "<p>" + result.wTeaser;
+              //create the wikipedia hyperlink
+              listHTML += "<a href='" + result.wUrl + "' > Wikipedia Article </a> </p>";
+              listHTML += "</div>";
+
+            });
+
+
+            document.getElementById("similar_list").innerHTML = listHTML;
           });
       });
     }

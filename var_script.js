@@ -19,7 +19,7 @@ let explanations = {
       "Popularity: No one has heard of this movie - Nearly everyone has an opinion about this movie."
     ]
   },
-  "books": {
+  "book": {
     "description": "Books",
     "categories": [
       "Characters: The characters are one-note and create no response from the reader - The reader has a deep connection with the main characters and the side characters have distinct purposes.",
@@ -163,7 +163,7 @@ let movieCells = [
     "Plot/Plots": 5,
     "Popularity": 4
   }, {
-    "title": "Pirates of the Carribean: The Curse of the Black Pearl",
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
     "imagePath": "images/Curse_of_the_Black_Pearl.png",
     "Characters": 9,
     "Dialogue": 8,
@@ -171,7 +171,7 @@ let movieCells = [
     "Plot/Plots": 7,
     "Popularity": 10
   }, {
-    "title": "Pirates of the Carribean: At World's End",
+    "title": "Pirates of the Caribbean: At World's End",
     "imagePath": "images/At_Worlds_End.jpg",
     "Characters": 6,
     "Dialogue": 7,
